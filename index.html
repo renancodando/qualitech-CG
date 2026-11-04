@@ -1,2 +1,220 @@
 <!doctype html>
-<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#030b16"><meta name="description" content="Qualitech CG — assistência técnica especializada em Campina Grande."><title>Qualitech CG | Assistência Técnica Especializada</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="./styles.css"></head><body><header class="top"><nav class="nav shell"><a class="brand" href="#inicio">Qualitech <b>CG</b><small>ASSISTÊNCIA TÉCNICA</small></a><div class="navlinks" id="navlinks"><a href="#inicio">Início</a><a href="#servicos">Serviços</a><a href="#processo">Como funciona</a><a href="#sobre">Sobre</a><a href="#localizacao">Localização</a></div><a class="btn" href="#orcamento">Solicitar diagnóstico ↗</a><button class="hamb" id="hamb" aria-label="Abrir menu" aria-expanded="false">☰</button></nav></header><main><section class="hero" id="inicio"><div class="heroGrid shell"><div class="heroText"><div class="kicker">Assistência técnica especializada</div><h1>Tecnologia que <span>volta à vida.</span></h1><p class="intro">Seu equipamento merece uma nova chance. Conte o que aconteceu e solicite uma avaliação técnica de forma simples.</p><div class="actions"><a class="btn fill" href="#orcamento">Solicitar orçamento ↗</a><a class="btn" href="#servicos">Explorar serviços ↓</a></div><div class="proof"><span><i>⌁</i> Atendimento personalizado</span><span><i>◇</i> Avaliação técnica</span><span><i>⌖</i> Campina Grande — PB</span></div></div><div class="scene"><canvas id="scene3d" aria-label="Representação 3D interativa de um smartphone com componentes separados"></canvas><span class="sceneLabel">ENGENHARIA EM DETALHES · 3D</span></div></div><span class="scroll">ROLE PARA EXPLORAR ↓</span></section><section class="section shell" id="servicos"><div class="sectionHeader reveal"><div><span class="eyebrow">O que fazemos</span><h2>Cada problema merece<br>uma solução precisa.</h2></div><p class="muted">Conte o que aconteceu com seu aparelho. Nossa proposta é tornar o primeiro contato rápido e claro.</p></div><div class="cards"><article class="card reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=700&q=85" alt="Smartphone"><div class="cardContent"><h3>Celulares</h3><p>Tela, bateria, carregamento e outros problemas.</p></div></article><article class="card reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=700&q=85" alt="Notebook"><div class="cardContent"><h3>Notebooks</h3><p>Desempenho, inicialização e avaliação de falhas.</p></div></article><article class="card reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1587831990711-23ca6441447b?auto=format&fit=crop&w=700&q=85" alt="Computador"><div class="cardContent"><h3>Computadores</h3><p>Diagnóstico e suporte para desktops.</p></div></article><article class="card reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?auto=format&fit=crop&w=700&q=85" alt="Console"><div class="cardContent"><h3>Outros equipamentos</h3><p>Consulte a disponibilidade de atendimento.</p></div></article></div></section><section class="process section" id="processo"><div class="shell"><span class="eyebrow">Uma jornada transparente</span><h2>Do problema à solução.</h2><div class="steps"><div class="step reveal"><span class="num">01 / CONTATO</span><h3>Conte o problema</h3><p>Informe marca, modelo e o que aconteceu com o dispositivo.</p></div><div class="step reveal"><span class="num">02 / AVALIAÇÃO</span><h3>Converse com a equipe</h3><p>Envie as informações e consulte os próximos passos.</p></div><div class="step reveal"><span class="num">03 / DIAGNÓSTICO</span><h3>Entenda o reparo</h3><p>Receba orientações sobre avaliação e possíveis soluções.</p></div><div class="step reveal"><span class="num">04 / ACOMPANHAMENTO</span><h3>Continue informado</h3><p>Combine diretamente com a assistência o atendimento.</p></div></div></div></section><section class="section shell split" id="sobre"><img class="featureImage reveal" loading="lazy" src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=1200&q=85" alt="Ambiente técnico"><div class="reveal"><span class="eyebrow">Qualitech CG</span><h2>Detalhes fazem a diferença.</h2><p class="muted">Uma apresentação digital pensada para valorizar a assistência técnica: linguagem objetiva, visual próprio e uma experiência de orçamento que respeita o tempo do cliente.</p><a class="btn" href="#orcamento">Descrever meu aparelho ↗</a></div></section><section class="section formSection" id="orcamento"><div class="shell formWrap"><div><span class="eyebrow">Seu próximo passo</span><h2>Vamos entender o que aconteceu?</h2><p class="muted">Preencha os dados do dispositivo. O site monta uma mensagem completa para você enviar pelo WhatsApp.</p><p class="hint">Nenhum dado é enviado para um servidor por este formulário.</p></div><form class="form" id="formOrcamento"><div class="fieldGrid"><div class="field"><label for="marca">Marca *</label><select id="marca" required><option value="">Selecione</option><option>Apple</option><option>Samsung</option><option>Motorola</option><option>Xiaomi</option><option>Realme</option><option>LG</option><option>Asus</option><option>Lenovo</option><option>Dell</option><option>Acer</option><option>HP</option><option>Outra</option></select></div><div class="field"><label for="tipo">Equipamento *</label><select id="tipo" required><option value="">Selecione</option><option>Celular</option><option>Notebook</option><option>Computador</option><option>Tablet</option><option>Console</option><option>Outro</option></select></div></div><div class="field"><label for="modelo">Modelo exato *</label><input id="modelo" required maxlength="100" placeholder="Ex.: Galaxy S23, iPhone 13"></div><div class="field"><label for="defeito">O que aconteceu? *</label><textarea id="defeito" required minlength="10" maxlength="1200" placeholder="Ex.: O aparelho caiu, a tela ficou preta, mas ainda vibra..."></textarea></div><div class="fieldGrid"><div class="field"><label for="nome">Seu nome *</label><input id="nome" required maxlength="80" autocomplete="name" placeholder="Seu nome"></div><div class="field"><label for="urgencia">Urgência</label><select id="urgencia"><option>Sem urgência</option><option>Assim que possível</option><option>Urgente</option></select></div></div><button class="btn fill" type="submit">Preparar mensagem para WhatsApp ↗</button><p class="hint" id="formStatus" aria-live="polite">Você poderá copiar a mensagem antes de enviar.</p><button type="button" class="btn" id="copiar" hidden>Copiar mensagem</button></form></div></section><section class="section shell location" id="localizacao"><div><span class="eyebrow">Onde estamos</span><h2>Campina Grande,<br>Paraíba.</h2><p class="muted">O endereço exato da Qualitech CG precisa ser confirmado antes da publicação definitiva.</p><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Qualitech+CG+Campina+Grande+PB" target="_blank" rel="noopener noreferrer">Pesquisar no Google Maps ↗</a></div><iframe class="map" title="Mapa de Campina Grande" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Campina%20Grande%20PB&t=&z=12&ie=UTF8&iwloc=&output=embed"></iframe></section></main><footer class="footer"><div class="shell footerInner"><span>Qualitech CG © <span id="ano"></span></span><span>Demonstração independente · Dados comerciais sujeitos a confirmação</span></div></footer><div class="toast" id="toast" role="status" hidden></div><script type="module" src="./main.js"></script></body></html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#0b0a0c">
+    <meta name="description" content="Qualitech CG — tecnologia que continua com você. Solicite uma avaliação técnica pelo WhatsApp.">
+    <title>Qualitech CG — Tecnologia que continua com você</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="top">
+      <nav class="nav shell">
+        <a class="brand" href="#inicio">Qualitech <b>CG</b>
+        <small>ASSISTÊNCIA TÉCNICA</small>
+      </a>
+      <div class="navlinks" id="navlinks">
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#processo">Como funciona</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#orcamento">Contato</a>
+      </div>
+      <a class="btn" href="#orcamento">Solicitar diagnóstico ↗</a>
+      <button class="hamb" id="hamb" aria-controls="navlinks" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="heroGrid shell">
+        <div class="heroText">
+          <div class="kicker">Assistência técnica especializada</div>
+          <h1>Tecnologia que continua <span>com você.</span>
+        </h1>
+        <p class="intro">Diagnóstico preciso, reparo especializado e atenção a cada detalhe do seu dispositivo.</p>
+        <div class="actions">
+          <a class="btn fill" href="#orcamento">Solicitar orçamento ↗</a>
+          <a class="btn" href="#servicos">Nossos serviços ↓</a>
+        </div>
+        <div class="proof">
+          <span>
+            <i>⌁</i> Atendimento personalizado</span>
+            <span>
+              <i>◇</i> Avaliação técnica</span>
+              <span>
+                <i>✓</i> Atendimento sob consulta</span>
+              </div>
+            </div>
+            <div class="scene">
+              <canvas id="scene3d" role="img" aria-label="Representação tridimensional de um smartphone com componentes separados">
+            </canvas>
+            <span class="sceneLabel">TECNOLOGIA EM DETALHES · 3D</span>
+          </div>
+        </div>
+        <span class="scroll">ROLE PARA EXPLORAR ↓</span>
+      </section>
+      <section class="section shell" id="servicos">
+        <div class="sectionHeader reveal">
+          <div>
+            <span class="eyebrow">O que fazemos</span>
+            <h2>Cada problema merece<br>uma solução precisa.</h2>
+          </div>
+          <p class="muted">Conte o que aconteceu com seu aparelho. Nossa proposta é tornar o primeiro contato rápido e claro.</p>
+        </div>
+        <div class="cards">
+          <article class="card reveal">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=700&q=85" alt="Smartphone">
+            <div class="cardContent">
+              <h3>Celulares</h3>
+              <p>Tela, bateria, carregamento e outros problemas.</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=700&q=85" alt="Notebook">
+            <div class="cardContent">
+              <h3>Notebooks</h3>
+              <p>Desempenho, inicialização e avaliação de falhas.</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1587831990711-23ca6441447b?auto=format&fit=crop&w=700&q=85" alt="Computador">
+            <div class="cardContent">
+              <h3>Computadores</h3>
+              <p>Diagnóstico e suporte para desktops.</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?auto=format&fit=crop&w=700&q=85" alt="Console">
+            <div class="cardContent">
+              <h3>Outros equipamentos</h3>
+              <p>Consulte a disponibilidade de atendimento.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="process section" id="processo">
+        <div class="shell">
+          <span class="eyebrow">Uma jornada transparente</span>
+          <h2>Do problema à solução.</h2>
+          <div class="steps">
+            <div class="step reveal">
+              <span class="num">01 / CONTATO</span>
+              <h3>Conte o problema</h3>
+              <p>Informe marca, modelo e o que aconteceu com o dispositivo.</p>
+            </div>
+            <div class="step reveal">
+              <span class="num">02 / AVALIAÇÃO</span>
+              <h3>Converse com a equipe</h3>
+              <p>Envie as informações e consulte os próximos passos.</p>
+            </div>
+            <div class="step reveal">
+              <span class="num">03 / DIAGNÓSTICO</span>
+              <h3>Entenda o reparo</h3>
+              <p>Receba orientações sobre avaliação e possíveis soluções.</p>
+            </div>
+            <div class="step reveal">
+              <span class="num">04 / ACOMPANHAMENTO</span>
+              <h3>Continue informado</h3>
+              <p>Combine diretamente com a assistência o atendimento.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section shell split" id="sobre">
+        <img class="featureImage reveal" loading="lazy" src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=1200&q=85" alt="Ambiente técnico">
+        <div class="reveal">
+          <span class="eyebrow">Qualitech CG</span>
+          <h2>Detalhes fazem a diferença.</h2>
+          <p class="muted">Uma apresentação digital pensada para valorizar a assistência técnica: linguagem objetiva, visual próprio e uma experiência de orçamento que respeita o tempo do cliente.</p>
+          <a class="btn" href="#orcamento">Descrever meu aparelho ↗</a>
+        </div>
+      </section>
+      <section class="section formSection" id="orcamento">
+        <div class="shell formWrap">
+          <div>
+            <span class="eyebrow">Seu próximo passo</span>
+            <h2>Vamos entender o que aconteceu?</h2>
+            <p class="muted">Preencha os dados do dispositivo. O site monta uma mensagem completa para você enviar pelo WhatsApp.</p>
+            <p class="hint">Nenhum dado é enviado para um servidor por este formulário.</p>
+          </div>
+          <form class="form" id="formOrcamento">
+            <div class="fieldGrid">
+              <div class="field">
+                <label for="marca">Marca *</label>
+                <select id="marca" required>
+                  <option value="">Selecione</option>
+                  <option>Apple</option>
+                  <option>Samsung</option>
+                  <option>Motorola</option>
+                  <option>Xiaomi</option>
+                  <option>Realme</option>
+                  <option>LG</option>
+                  <option>Asus</option>
+                  <option>Lenovo</option>
+                  <option>Dell</option>
+                  <option>Acer</option>
+                  <option>HP</option>
+                  <option>Outra</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="tipo">Equipamento *</label>
+                <select id="tipo" required>
+                  <option value="">Selecione</option>
+                  <option>Celular</option>
+                  <option>Notebook</option>
+                  <option>Computador</option>
+                  <option>Tablet</option>
+                  <option>Console</option>
+                  <option>Outro</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="modelo">Modelo exato *</label>
+              <input id="modelo" required maxlength="100" placeholder="Ex.: Galaxy S23, iPhone 13">
+            </div>
+            <div class="field">
+              <label for="defeito">O que aconteceu? *</label>
+              <textarea id="defeito" required minlength="10" maxlength="1200" placeholder="Ex.: O aparelho caiu, a tela ficou preta, mas ainda vibra...">
+              </textarea>
+            </div>
+            <div class="fieldGrid">
+              <div class="field">
+                <label for="nome">Seu nome *</label>
+                <input id="nome" required maxlength="80" autocomplete="name" placeholder="Seu nome">
+              </div>
+              <div class="field">
+                <label for="urgencia">Urgência</label>
+                <select id="urgencia">
+                  <option>Sem urgência</option>
+                  <option>Assim que possível</option>
+                  <option>Urgente</option>
+                </select>
+              </div>
+            </div>
+            <button class="btn fill" type="submit">Preparar mensagem para WhatsApp ↗</button>
+            <p class="hint" id="formStatus" aria-live="polite">Você poderá copiar a mensagem antes de enviar.</p>
+            <button type="button" class="btn" id="copiar" hidden>Copiar mensagem</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="shell footerInner">
+        <span>Qualitech CG © <span id="ano">
+        </span>
+      </span>
+      <span>Demonstração independente · Dados comerciais sujeitos a confirmação</span>
+    </div>
+  </footer>
+  <div class="toast" id="toast" role="status" hidden>
+  </div>
+  <script type="module" src="./main.js">
+</script>
+</body>
+</html>

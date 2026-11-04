@@ -1,5 +1,5 @@
 import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js';
-const CONFIG={whatsapp:''}; // Inserir DDD + número oficial, apenas dígitos.
+const CONFIG = { whatsapp: '' };
 const $=id=>document.getElementById(id);
 $('ano').textContent=new Date().getFullYear();
 $('hamb').addEventListener('click',()=>{const open=$('navlinks').classList.toggle('open');$('hamb').setAttribute('aria-expanded',String(open))});
