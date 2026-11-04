@@ -11,6 +11,7 @@ if (canvas && container) {
     camera.position.set(0, 0.25, 11.8);
 
     const renderizador = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true, powerPreference: 'high-performance' });
+    canvas.addEventListener('webglcontextlost', evento => { evento.preventDefault(); container.classList.remove('modelo-pronto'); cancelAnimationFrame(quadro); }, { passive: false });
     renderizador.setPixelRatio(Math.min(devicePixelRatio, 2));
     renderizador.outputColorSpace = THREE.SRGBColorSpace;
     renderizador.toneMapping = THREE.ACESFilmicToneMapping;
@@ -100,6 +101,7 @@ if (canvas && container) {
       grupo.rotation.x = -0.12 + Math.sin(tempo * 0.00026) * 0.035;
       grupo.position.y = 0.08 + Math.sin(tempo * 0.0011) * 0.07;
       renderizador.render(cena, camera);
+      container.classList.add('modelo-pronto');
       if (!reduzido && !document.hidden) quadro = requestAnimationFrame(animar);
     }
     quadro = requestAnimationFrame(animar);
@@ -108,6 +110,6 @@ if (canvas && container) {
       if (!document.hidden) quadro = requestAnimationFrame(animar);
     });
   } catch (erro) {
-    console.error('Não foi possível iniciar o modelo tridimensional.', erro);
+    console.warn('Exibindo versão alternativa do emblema.', erro);
   }
 }

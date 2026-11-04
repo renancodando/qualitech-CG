@@ -4,3 +4,13 @@
 .emblema canvas{display:block;width:100%;height:100%;filter:drop-shadow(0 0 18px rgba(255,100,17,.34))}
 @media(max-width:760px){.emblema{top:-25px;height:340px;width:100%}}
 @media(max-width:390px){.emblema{height:295px;top:-20px}}
+
+/* Resiliência do emblema 3D e ajustes de interação */
+.emblema{isolation:isolate}
+.emblema-reserva{position:absolute;inset:0;display:grid;place-items:center;font-family:Arial Black,Arial,sans-serif;font-size:clamp(220px,25vw,400px);font-weight:900;line-height:1;background:linear-gradient(135deg,#e4e0dc,#454149 32%,#0d0c11 55%,#77737a 80%,#242127);background-clip:text;-webkit-background-clip:text;color:transparent;-webkit-text-stroke:2px #b5a6a0;text-shadow:8px 10px 0 #100b0a,13px 14px 2px #f76c1c;filter:drop-shadow(0 0 14px #f76c1c70);pointer-events:none}
+.emblema canvas{position:relative;z-index:1;opacity:0;transition:opacity .4s ease}
+.emblema.modelo-pronto canvas{opacity:1}
+.emblema.modelo-pronto .emblema-reserva{visibility:hidden}
+@media(max-width:760px){.emblema-reserva{font-size:clamp(200px,62vw,340px)}}
+@media(max-width:390px){.emblema-reserva{font-size:215px}}
+@media(hover:hover){.etapa:hover .etapa-icone{border-color:#ff7517;box-shadow:0 0 17px #ff75174b}}
