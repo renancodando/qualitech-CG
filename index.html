@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
-  <script src="./main.js" defer></script>
+  <script src="./main.js" defer></script><script type="module" src="./modelo3d.js"></script>
 </head>
 <body>
   <canvas id="ondas" aria-hidden="true"></canvas>
@@ -31,18 +31,18 @@
         <div class="chamada">
           <p class="sobretitulo">ASSISTÊNCIA TÉCNICA ESPECIALIZADA</p>
           <h1>Tecnologia<br>que continua<br><span>com você.</span></h1>
-          <p class="descricao">Diagnóstico preciso, reparo especializado e performance de verdade para o seu dispositivo.</p>
+          <p class="descricao">Diagnóstico preciso e soluções especializadas para o seu dispositivo. Consulte a disponibilidade dos serviços.</p>
           <div class="acoes"><a class="botao botao-laranja" href="#orcamento">Solicitar Orçamento <span>→</span></a><a class="botao botao-secundario" href="#servicos">Nossos Serviços</a></div>
         </div>
         <div class="emblema-area" aria-label="Emblema Q tridimensional da Qualitech CG">
           <div class="halo"></div><div class="plataforma"><div class="anel anel-externo"></div><div class="anel anel-interno"></div></div>
-          <div class="emblema"><span>Q</span></div>
+          <div class="emblema"><canvas id="modelo3d" aria-label="Emblema Q metálico tridimensional animado"></canvas></div>
           <div class="reflexo"></div>
         </div>
         <div class="vantagens">
           <div class="vantagem"><span class="vantagem-icone">ϟ</span><span>Diagnóstico<br>Rápido</span></div>
-          <div class="vantagem"><span class="vantagem-icone">♢</span><span>Garantia<br>Real</span></div>
-          <div class="vantagem"><span class="vantagem-icone">▣</span><span>Peças de<br>Qualidade</span></div>
+          <div class="vantagem"><span class="vantagem-icone">♢</span><span>Avaliação<br>Cuidadosa</span></div>
+          <div class="vantagem"><span class="vantagem-icone">▣</span><span>Reparo<br>Especializado</span></div>
         </div>
       </div>
       <form class="orcamento" id="orcamento">
@@ -56,8 +56,8 @@
         <h2>Como<br><span>Funciona?</span></h2>
         <div class="etapa"><span class="etapa-icone">▤</span><div><strong>Solicitação</strong><p>Você envia os dados do seu aparelho.</p></div><span class="seta">›</span></div>
         <div class="etapa"><span class="etapa-icone">⌕</span><div><strong>Diagnóstico</strong><p>Analisamos e informamos a melhor solução.</p></div><span class="seta">›</span></div>
-        <div class="etapa"><span class="etapa-icone">⚒</span><div><strong>Reparo</strong><p>Serviço realizado por técnicos especializados.</p></div><span class="seta">›</span></div>
-        <div class="etapa"><span class="etapa-icone">✓</span><div><strong>Retirada</strong><p>Seu dispositivo pronto, com segurança.</p></div></div>
+        <div class="etapa"><span class="etapa-icone">⚒</span><div><strong>Reparo</strong><p>A equipe orienta sobre o reparo e a disponibilidade.</p></div><span class="seta">›</span></div>
+        <div class="etapa"><span class="etapa-icone">✓</span><div><strong>Retirada</strong><p>Combine a retirada diretamente com a equipe.</p></div></div>
       </div>
     </section>
     <section class="secao" id="servicos"><div class="secao-cabecalho"><p class="sobretitulo">O QUE FAZEMOS</p><h2>Soluções para o que<br><span>realmente importa.</span></h2><p>Da tela quebrada ao problema que ninguém conseguiu resolver. Converse com nossa equipe.</p></div><div class="servicos"><article><span>01 / DISPLAY</span><h3>Troca de tela</h3><p>Consulte a avaliação para danos no vidro, toque e imagem.</p></article><article><span>02 / ENERGIA</span><h3>Bateria</h3><p>Diagnóstico de autonomia, carga e desligamentos.</p></article><article><span>03 / CONEXÕES</span><h3>Conectores</h3><p>Problemas no carregamento e nas conexões do aparelho.</p></article><article><span>04 / SISTEMA</span><h3>Software</h3><p>Falhas de inicialização, lentidão e problemas no sistema.</p></article></div></section>
