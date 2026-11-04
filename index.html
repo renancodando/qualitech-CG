@@ -10,10 +10,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
-  <script src="./main.js" defer></script><script type="module" src="./modelo3d.js"></script>
+  <script src="./main.js" defer></script><script src="./interacoes.js" defer></script><script type="module" src="./modelo3d.js"></script>
 </head>
 <body>
-  <canvas id="ondas" aria-hidden="true"></canvas>
+  <canvas id="ondas" aria-hidden="true"></canvas><div class="cursor-luz" aria-hidden="true"></div>
   <header class="cabecalho">
     <a class="marca" href="#inicio" aria-label="Qualitech CG, início">
       <span class="marca-simbolo">Q</span>
@@ -32,7 +32,7 @@
           <p class="sobretitulo">ASSISTÊNCIA TÉCNICA ESPECIALIZADA</p>
           <h1>Tecnologia<br>que continua<br><span>com você.</span></h1>
           <p class="descricao">Diagnóstico preciso e soluções especializadas para o seu dispositivo. Consulte a disponibilidade dos serviços.</p>
-          <div class="acoes"><a class="botao botao-laranja" href="#orcamento">Solicitar Orçamento <span>→</span></a><a class="botao botao-secundario" href="#servicos">Nossos Serviços</a></div>
+          <div class="acoes"><a class="botao botao-laranja magnetico" href="#orcamento">Solicitar Orçamento <span>→</span></a><a class="botao botao-secundario magnetico" href="#servicos">Nossos Serviços</a></div>
         </div>
         <div class="emblema-area" aria-label="Emblema Q tridimensional da Qualitech CG">
           <div class="halo"></div><div class="plataforma"><div class="anel anel-externo"></div><div class="anel anel-interno"></div></div>

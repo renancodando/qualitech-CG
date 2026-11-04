@@ -14,3 +14,14 @@
 @media(max-width:760px){.emblema-reserva{font-size:clamp(200px,62vw,340px)}}
 @media(max-width:390px){.emblema-reserva{font-size:215px}}
 @media(hover:hover){.etapa:hover .etapa-icone{border-color:#ff7517;box-shadow:0 0 17px #ff75174b}}
+
+/* Interações inspiradas no Lumen, adaptadas à identidade Qualitech */
+.cursor-luz{position:fixed;top:0;left:0;width:380px;height:380px;border-radius:50%;pointer-events:none;z-index:2;opacity:0;background:radial-gradient(circle,rgba(255,111,25,.19),rgba(255,111,25,.055) 36%,transparent 69%);filter:blur(24px);transform:translate3d(-500px,-500px,0);mix-blend-mode:screen}
+.interacoes-ativas .cursor-luz{opacity:1}
+.hero-conteudo,.cabecalho,.orcamento{position:relative;z-index:3}
+.emblema-area .halo{translate:var(--paralaxe-x,0px) var(--paralaxe-y,0px);transition:translate .3s ease-out}
+.magnetico{transition:translate .22s ease-out,background-color .25s,border-color .25s,box-shadow .25s}
+.servicos article{transform:perspective(900px) rotateX(var(--inclinacao-x,0deg)) rotateY(var(--inclinacao-y,0deg));transition:transform .3s ease-out,box-shadow .3s,border-color .3s;transform-style:preserve-3d}
+@media(prefers-reduced-motion:no-preference){.revelar{opacity:0;translate:0 22px;transition:opacity .8s ease,translate .8s cubic-bezier(.2,.8,.2,1)}.revelar.visivel{opacity:1;translate:0 0}.etapa:nth-child(2),.vantagem:nth-child(2){transition-delay:.09s}.etapa:nth-child(3),.vantagem:nth-child(3){transition-delay:.16s}.etapa:nth-child(4){transition-delay:.23s}}
+@media(hover:none),(pointer:coarse){.cursor-luz{display:none}.servicos article{transform:none!important}.magnetico{translate:none!important}}
+@media(prefers-reduced-motion:reduce){.cursor-luz{display:none}.revelar{opacity:1!important;translate:none!important}.magnetico{translate:none!important}}

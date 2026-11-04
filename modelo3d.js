@@ -96,9 +96,17 @@ if (canvas && container) {
     ajustar();
 
     let quadro = 0;
+    const alvo = { x: 0, y: 0 };
+    const atual = { x: 0, y: 0 };
+    window.addEventListener('qualitech:ponteiro', evento => { alvo.x = evento.detail.x; alvo.y = evento.detail.y; }, { passive: true });
+    window.addEventListener('qualitech:repouso', () => { alvo.x = 0; alvo.y = 0; });
     function animar(tempo) {
-      grupo.rotation.y = -0.25 + Math.sin(tempo * 0.00038) * 0.11;
-      grupo.rotation.x = -0.12 + Math.sin(tempo * 0.00026) * 0.035;
+      atual.x += (alvo.x - atual.x) * 0.055;
+      atual.y += (alvo.y - atual.y) * 0.055;
+      grupo.rotation.y = -0.25 + Math.sin(tempo * 0.00038) * 0.11 + atual.x * 0.22;
+      grupo.rotation.x = -0.12 + Math.sin(tempo * 0.00026) * 0.035 - atual.y * 0.14;
+      luzLaranja.position.x = -3.8 + atual.x * 3;
+      luzFrontal.position.x = -3 + atual.x * 2;
       grupo.position.y = 0.08 + Math.sin(tempo * 0.0011) * 0.07;
       renderizador.render(cena, camera);
       container.classList.add('modelo-pronto');
